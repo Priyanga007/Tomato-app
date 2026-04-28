@@ -1,5 +1,3 @@
-import React from "react";
-
 const FoodCard = ({ item, cart, setCart }) => {
 
   const addToCart = () => {

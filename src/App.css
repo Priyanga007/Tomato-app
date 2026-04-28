@@ -41,8 +41,15 @@ html {
 .signin-btn {
   border: 1px solid #ff5a3c;
   padding: 8px 18px;
-  border-radius: 20px;
+  border-radius: 20%;
   background: transparent;
+  cursor: pointer;
+}
+.login-btn {
+  border: 2px solid #140705;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgb(250, 219, 160);
   cursor: pointer;
 }
 
@@ -60,19 +67,22 @@ html {
 
 .header-content {
   position: absolute;
-  top: 35%;
+  top: 20%;
   left: 10%;
   color: white;
   max-width: 400px;
 }
 
 .header-content h1 {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 35px;
   margin-top: -20px;
+   line-height: 1.5;
 }
 .header-content p {
+  position : absolute;
   font-size: 14px;
+  top: 60%;
   margin-bottom: 15px;
 }
 
@@ -95,16 +105,27 @@ html {
   margin-top: 20px;
 }
 
-.category-item {
-  text-align: center;
-}
-
 .category-item img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border-color: black;
   border-style: 5px solid;
+}
+.category-item {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.category-item.active {
+  border: 2px solid #ff5a3c;
+  background: #fff2ef;
+}
+.category-item:hover {
+  transform: scale(1.05);
 }
 
 /* FOOD LIST */

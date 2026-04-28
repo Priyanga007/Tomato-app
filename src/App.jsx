@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import Cart from "./components/Cart";
 import AppDownload from "./components/AppDownload";
 import ScrollTop from "./components/ScrollTop";
+import Users from "./components/Users";
 
 import "./App.css";
 
@@ -15,14 +16,14 @@ function App() {
   const [showLogin, setShowLogin] = useState(false);
   const [cart, setCart] = useState({});
   const [showCart, setShowCart] = useState(false);
+  const [category, setCategory] = useState("All");
 
 
   return (
     <>
-      <Navbar 
-        setShowLogin={setShowLogin} 
-        cart={cart} 
-        setShowCart={setShowCart}
+      <Navbar setShowLogin={setShowLogin} 
+              cart={cart} 
+              setShowCart={setShowCart}
       />
 
       {showCart && <Cart cart={cart} setCart={setCart} />}
@@ -31,10 +32,11 @@ function App() {
       {!showCart && (
         <>
           <Header />
-          <Categories />
-          <FoodList cart={cart} setCart={setCart} />
+          <Categories category={category} setCategory={setCategory}/>
+          <FoodList cart={cart} setCart={setCart} category={category}/>
           <AppDownload />
           <ScrollTop />
+          <Users />
           <Footer />
         </>
 

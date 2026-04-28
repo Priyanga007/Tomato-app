@@ -28,9 +28,9 @@ const Navbar = ({ setShowLogin, cart, setShowCart }) => {
           <span className="cart-count">{totalItems}</span>
         </div>
 
-        <button 
+        <button className="login-btn"
             onClick={() => {console.log("login clicked");
-              setShowLogin(true); }}>Login</button>
+              setShowLogin(true); }}>Sign-In</button>
       </div>
     </div>
   );

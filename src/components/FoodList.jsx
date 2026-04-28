@@ -1,5 +1,5 @@
-import foodData from "../data/foodData";
 import FoodCard from "./FoodCard";
+import FoodData from "../data/FoodData.json";
 
 const FoodList = ({ cart, setCart }) => {
   return (
@@ -7,7 +7,7 @@ const FoodList = ({ cart, setCart }) => {
       <h2>Top Dishes Near You</h2>
 
       <div className="food-grid">
-        {foodData.map((item) => (
+        {FoodData.map((item) => (
           <FoodCard 
             key={item.id} 
             item={item} 
