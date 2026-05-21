@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="footer-left">
           <h2>Tomato.</h2>
           <h3>Freshness Delivered</h3>
+          <h6>Serving quality food since 1990</h6>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Eveniet, nam? Lorem ipsum dolor sit amet.
